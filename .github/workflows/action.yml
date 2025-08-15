@@ -1,9 +1,9 @@
 Docker Project: Actions Workflow
 
 name: Docker Project Actions Workflow
-on:
-  push
-  jobs:
+on: [push]
+  
+    jobs:
     install docker:
       runs-on: ubuntu-latest
       steps:
