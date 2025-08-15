@@ -1,10 +1,9 @@
 name: Docker build & push
 on: push   # quote 'on' to satisfy the YAML/GitHub schema linter
-
+env:
+  IMAGE_NAME: github-actions.nginx
 
 jobs:
-
-
     Install-Docker:
       runs-on: ubuntu-latest
       steps:
